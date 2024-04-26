@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: rohan
   annotations:
-    configmanagement.gke.io/cluster-selector: fleet-cluster-01
+    configmanagement.gke.io/cluster-selector: fleet-cluster-01-anupam
