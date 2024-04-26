@@ -4,6 +4,12 @@ metadata:
   name: cluster-selector
 spec:
   selector:
-    matchLabels:
-      env: test
-      location: usa
+    matchExpressions:
+    - key: env
+      operator: In
+      values:
+      - test
+    - key: location
+      operator: In
+      values:
+      - usa
