@@ -1,7 +1,7 @@
 kind: ClusterSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
-  name: fleet-cluster-01
+  name: fleet-cluster-01-anupam
 spec:
   selector:
     matchExpressions:
