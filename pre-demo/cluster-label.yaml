@@ -11,4 +11,4 @@ apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
   name: non-fleet-gcp-cluster
   labels:
-    environment: dev
+    environment: prod
