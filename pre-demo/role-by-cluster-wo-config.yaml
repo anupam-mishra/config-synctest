@@ -4,7 +4,7 @@ metadata:
   namespace: armenia
   name: namespace-reader
   annotations:
-    configsync.gke.io/cluster-name-selector: fleet-cluster-0001,non-fleet-project-cluster-01,autopilot-cluster-1
+    configsync.gke.io/cluster-name-selector: fleet-cluster-0001,non-fleet-project-cluster-01
 rules:
 - apiGroups: [""]
   resources: ["namespaces"]
