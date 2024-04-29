@@ -1,8 +1,0 @@
----
-kind: ConfigManagement
-apiVersion: configmanagement.gke.io/v1
-metadata:
-  name: config-management
-spec:
-  clusterName: non-fleet-project-cluster-01
-  enableMultiRepo: true
