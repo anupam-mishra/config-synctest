@@ -4,7 +4,7 @@ metadata:
   name: nginx
   namespace: armenia
   annotations:
-    configmanagement.gke.io/cluster-selector: non-fleet-project-cluster-01
+    configmanagement.gke.io/cluster-selector: selector-for-prod-env
 spec:
   containers:
   - name: nginx
