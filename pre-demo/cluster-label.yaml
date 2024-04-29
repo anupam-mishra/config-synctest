@@ -4,7 +4,6 @@ metadata:
   name: fleet-cluster-0001
   labels:
     environment: prod
-    location: europewest
 
 ---
 kind: Cluster
@@ -12,5 +11,4 @@ apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
   name: non-fleet-project-cluster-01
   labels:
-    environment: prod
-    location: uscentral
+    environment: dev
