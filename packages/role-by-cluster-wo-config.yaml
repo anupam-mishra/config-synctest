@@ -4,7 +4,7 @@ metadata:
   namespace: rohan
   name: namespace-reader
   annotations:
-    configsync.gke.io/cluster-name-selector: autopilot-cluster-1,autopilot-cluster-nonprod
+    configsync.gke.io/cluster-name-selector: fleet-cluster-01,non-fleet-project-cluster
 rules:
 - apiGroups: [""]
   resources: ["namespaces"]
