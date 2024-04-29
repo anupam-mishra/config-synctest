@@ -1,7 +1,25 @@
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: fleet-cluster-02
+  name: fleet-cluster-0001
   labels:
     environment: prod
-    location: central
+    location: europewest
+
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: autopilot-cluster-1
+  labels:
+    environment: prod
+    location: useast
+
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: non-fleet-project-cluster-01
+  labels:
+    environment: prod
+    location: uscentral
