@@ -3,7 +3,7 @@ kind: K8sRequiredLabels
 metadata:
   name: ns-must-have-labels
   annotations:
-    configmanagement.gke.io/cluster-selector: pc-dhl-demo-nfc
+    configmanagement.gke.io/cluster-selector: policy-cluster
 spec:
   enforcementAction: deny
   match:
