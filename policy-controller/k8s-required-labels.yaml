@@ -1,7 +1,7 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sRequiredLabels
 metadata:
-  name: ns-must-have-geo
+  name: ns-must-have-labels
   annotations:
     configmanagement.gke.io/cluster-selector: pc-dhl-demo-nfc
 spec:
@@ -13,8 +13,3 @@ spec:
   parameters:
     labels:
       - key: "org"
-  excludedNamespaces:
-      - config-management-system
-      - gke-connect
-      - kube-system
-      - apigee
