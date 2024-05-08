@@ -5,6 +5,10 @@ metadata:
 spec:
   match:
     scope: Namespaced
+    excludedNamespaces: ["dhl-1"]
+    labelSelector:
+      matchLabels:
+        app: "nginx"
   location: "metadata.labels.team"
   parameters:
     assign:
