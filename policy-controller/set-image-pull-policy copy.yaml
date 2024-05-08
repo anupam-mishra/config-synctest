@@ -1,0 +1,13 @@
+apiVersion: mutations.gatekeeper.sh/v1alpha1
+kind: Assign
+metadata:
+  name: max-surge-default-value
+spec:
+  applyTo:
+  - groups: [""]
+    kinds: ["Pod", "Deployment"]
+    versions: ["v1"]
+  location: "strategy.rollingUpdate.maxSurge"
+  parameters:
+    assign:
+      value: "2"
