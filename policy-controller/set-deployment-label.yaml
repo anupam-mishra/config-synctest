@@ -11,6 +11,8 @@ spec:
     scope: "Namespaced"
     excludedNamespaces: ["dhl-1"]
     labelSelector:
+      matchLabels:
+          app: "nginx"
       matchExpressions:
       - key: "team"
         operator: "DoesNotExist" # "In" or "NotIn" or "Exists" or "DoesNotExist"
