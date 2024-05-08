@@ -13,11 +13,7 @@ spec:
     labelSelector:
       matchLabels:
           app: "nginx"
-      # matchExpressions:
-      # - key: "team"
-      #   operator: "Exists" # "In" or "NotIn" or "Exists" or "DoesNotExist"
   location: "metadata.labels.team"
   parameters:
-    condition: "MustNotExist" 
     assign:
       value: "dhl"
