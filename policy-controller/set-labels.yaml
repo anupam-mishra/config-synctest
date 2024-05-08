@@ -1,4 +1,4 @@
-apiVersion: mutations.gatekeeper.sh/v1
+apiVersion: mutations.gatekeeper.sh/v1alpha1
 kind: AssignMetadata
 metadata:
   name: add-labels-team
@@ -9,4 +9,3 @@ spec:
   parameters:
     assign:
       value: "dhl"
-      
