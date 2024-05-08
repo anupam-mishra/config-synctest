@@ -4,15 +4,9 @@ metadata:
   name: set-labels-to-pod-deployment
 spec:
   match:
-    kinds:
-    - apiGroups: [""]
-      kinds: ["Pods", "Deployment"]
     namespaces: ["mutate"]
     scope: "Namespaced"
     excludedNamespaces: ["dhl-1"]
-    labelSelector:
-      matchLabels:
-          app: "nginx"
   location: "metadata.labels.team"
   parameters:
     assign:
