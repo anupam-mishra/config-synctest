@@ -15,7 +15,7 @@ spec:
       - key: "team"
         operator: "DoesNotExist" # "In" or "NotIn" or "Exists" or "DoesNotExist"
         values: ["dhl"]
-  location: "metadata.labels"
+  location: "metadata.labels.team"
   parameters:
     assign:
       value: "dhl"
