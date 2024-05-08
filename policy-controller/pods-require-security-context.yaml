@@ -14,7 +14,7 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sPodsRequireSecurityContext
 metadata:
-  name: policy-essentials-v2022-pods-require-security-context
+  name: cis-k8s-v1.5.1-pods-require-security-context
   labels:
     policycontroller.gke.io/bundleName: policy-essentials-v2022
   annotations:
@@ -35,7 +35,7 @@ metadata:
         constraintHash: '15277b142d0976eae0bf2fce4eb8bdb49210df870954efbee80d7ff83fdfe369'
       }"
 spec:
-  enforcementAction: dryrun
+  enforcementAction: deny
   match:
     excludedNamespaces:
       - kube-system
