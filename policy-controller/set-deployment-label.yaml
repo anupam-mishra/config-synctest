@@ -4,7 +4,6 @@ metadata:
   name: set-labels-to-pod-deployment
 spec:
   match:
-    namespaces: ["mutate"]
     scope: "Namespaced"
     excludedNamespaces: ["dhl-1"]
   location: "metadata.labels.team"
