@@ -1,13 +1,13 @@
 apiVersion: mutations.gatekeeper.sh/v1alpha1
 kind: Assign
 metadata:
-  name: max-surge-default-value
+  name: ifnotpresent-pull-image
 spec:
   applyTo:
   - groups: [""]
-    kinds: ["Pod", "Deployment"]
+    kinds: ["Pod"]
     versions: ["v1"]
-  location: "strategy.rollingUpdate.maxSurge"
+  location: "spec.containers[name: *].imagePullPolicy"
   parameters:
     assign:
-      value: "2"
+      value: "IfNotPresent"
