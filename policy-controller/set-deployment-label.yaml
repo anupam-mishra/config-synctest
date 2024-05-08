@@ -1,7 +1,7 @@
 apiVersion: mutations.gatekeeper.sh/v1alpha1
 kind: AssignMetadata
 metadata:
-  name: set-labels-to-all
+  name: set-labels-to-pod-deployment
 spec:
   match:
     kinds:
