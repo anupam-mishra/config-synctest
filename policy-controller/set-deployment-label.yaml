@@ -1,12 +1,11 @@
-apiVersion: mutations.gatekeeper.sh/v1alpha1
+apiVersion: mutations.gatekeeper.sh/v1
 kind: AssignMetadata
 metadata:
-  name: set-labels-to-pod-deployment
+  name: demo-annotation-owner
 spec:
   match:
-    scope: "Namespaced"
-    excludedNamespaces: ["dhl-1"]
-  location: "metadata.labels.team"
+    scope: Namespaced
+  location: "metadata.annotations.owner"
   parameters:
     assign:
-      value: "dhl"
+      value: "admin"
