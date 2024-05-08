@@ -5,8 +5,8 @@ metadata:
 spec:
   match:
     kinds:
-    - apiGroups: ["*"]
-      kinds: ["*"]
+    - apiGroups: [""]
+      kinds: ["Pods", "Deployment"]
     namespaces: ["mutate"]
     scope: "Namespaced"
     excludedNamespaces: ["dhl-1"]
