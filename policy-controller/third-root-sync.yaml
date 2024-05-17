@@ -1,0 +1,15 @@
+# root-sync.yaml
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: third-root-sync
+  namespace: config-management-system
+spec:
+  sourceType: git
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/GoogleCloudPlatform/anthos-config-management-samples
+    revision: HEAD
+    branch: main
+    dir: crds
+    auth: none
