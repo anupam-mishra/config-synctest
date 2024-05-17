@@ -8,8 +8,8 @@ spec:
   sourceType: git
   sourceFormat: unstructured
   git:
-    repo: https://github.com/anupam-mishra/config-synctest
+    repo: https://github.com/GoogleCloudPlatform/gke-policy-library
     revision: HEAD
-    branch: pc-demo
-    dir: policy-controller
+    branch: main
+    dir: bundles/policy-essentials-v2022
     auth: none
