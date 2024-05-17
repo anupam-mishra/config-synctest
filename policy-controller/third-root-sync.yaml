@@ -11,5 +11,5 @@ spec:
     repo: https://github.com/GoogleCloudPlatform/anthos-config-management-samples
     revision: HEAD
     branch: main
-    dir: crds
+    dir: ci-pipeline-unstructured/config-root/constraints
     auth: none
