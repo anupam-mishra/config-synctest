@@ -4,7 +4,7 @@ metadata:
   namespace: krikor
   name: namespace-reader
   annotations:
-    configsync.gke.io/cluster-name-selector: fleet-cluster-01,non-fleet-project-cluster
+    configsync.gke.io/cluster-name-selector: cs-001
 rules:
 - apiGroups: [""]
   resources: ["namespaces"]
