@@ -1,0 +1,14 @@
+policyControllerHubConfig:
+installSpec: INSTALL_SPEC_ENABLED 
+policyContent:
+  bundles:
+    cis-k8s-v1.5.1:
+      exemptedNamespaces:
+      - "bundle-ns"
+exemptableNamespaces:
+- "overall-ns"
+referentialRulesEnabled: true
+auditIntervalSeconds: 60
+logDeniesEnabled: true
+mutationEnabled: true
+constraintViolationLimit: 20
