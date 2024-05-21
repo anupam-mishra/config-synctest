@@ -1,0 +1,14 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: test-pc
+metadata:
+  name: third-root-sync
+  namespace: config-management-system
+spec:
+  sourceType: git
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/GoogleCloudPlatform/gke-policy-library
+    revision: HEAD
+    branch: main
+    dir: anthos-bundles/cost-reliability-v2023
+    auth: none
