@@ -1,5 +1,5 @@
 apiVersion: configsync.gke.io/v1beta1
-kind: test-pc
+kind: RootSync
 metadata:
   name: third-root-sync
   namespace: config-management-system
